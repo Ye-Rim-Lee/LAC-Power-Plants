@@ -37,7 +37,7 @@ The pipeline combines **PDF table extraction, fuzzy string matching,** and **LLM
 
 
 ## Minimal Example
-**Goal**: Harmonize Ecuador’s national registry with existing ECU_charac.dta to add precise subtype labels.
+**Goal**: Harmonize Ecuador’s national registry with existing `ECU_charac.dta` to add precise subtype labels.
 
 ```python
 # Step 0: Extract reference table from PME.pdf
@@ -104,6 +104,12 @@ def llm_classify_hydro(name: str, context_es: str = ""):
 
 ## Project Context
 This code is part of the ENE Knowledge Team (IDB Energy Division, 2025) led by Lenin H. Balza, aiming to expand the Chile drought-generation study into a regional analysis of how climate shocks reshape Latin America’s power mix.
+
+
+While other countries (Chile, Colombia, Peru, and Brazil) followed manual or semi-automated workflows, the **Ecuador** module served as the first fully automated prototype, combining:
+- **Rule-based data engineering**
+- **AI-driven classification** for hydro subtypes using multilingual text evidence.
+
 This work contributes to the regional research paper **“Droughts and the Energy Transition in Latin America”**, which investigates how climate-induced water scarcity alters energy production patterns.
 My specific task ensured that Ecuador’s generation plants were consistently categorized by technology and subtype, allowing econometric models to accurately measure hydropower sensitivity to drought.
 
